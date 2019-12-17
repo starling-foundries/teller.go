@@ -1,0 +1,6 @@
+(* Additions to the FungibleToken.scilla contract to: *)
+(* 	- Modifying the Operator functions so that a malicious Operator cannot endanger funds *)
+(* 	- Adding a Send Check function that this new limited operator may call with a signed metatransaction in order to move funds on another user's behalf in a trustless manner *)
+(*	- Limit the teller number to one to avoid front-runner and operator error (total ordering)  issues (could also be solved with a second nonce) *)
+(* 	- Users can leave a tip in the native token, operators might choose to advertise a ninimum tip *)
+
